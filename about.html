@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Nikki.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <title>About - Nikki Portfolio</title>
+    <style>
+        /* Keyframes for fade-in animation */
+        @keyframes fadeInParagraph {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Base animation style for each paragraph */
+        .animated-paragraph {
+            opacity: 0; /* Hidden initially */
+            animation: fadeInParagraph 1s forwards; /* Fade-in animation */
+        }
+
+        /* Incremental delays for each paragraph */
+        .para-1 { animation-delay: 0s; }
+        .para-2 { animation-delay: 1s; }
+        .para-3 { animation-delay: 2s; }
+
+        /* Base animation style for each list item */
+        .animated-line {
+            opacity: 0; /* Hidden initially */
+            animation: fadeInParagraph 1s forwards; /* Fade-in animation */
+        }
+
+        /* Incremental delays for each list item */
+        .line-1 { animation-delay: 0.5s; }
+        .line-2 { animation-delay: 1.5s; }
+        .line-3 { animation-delay: 2.5s; }
+        .line-4 { animation-delay: 3.5s; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Nikki <span>Ram</span></div>
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="projects.html">My Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="main-container">
+            <!-- Image Section -->
+            <div class="image" data-aos="fade-right" data-aos-duration="1500">
+                <img src="nikki6.jpg" alt="Nikki Ram" />
+            </div>
+            
+            <!-- Content Section -->
+            <div class="content">
+                <h1>About Me</h1>
+                <p class="animated-paragraph para-1">
+                    Hi! I'm <strong>Nikki Ram</strong>, a passionate front-end developer dedicated to building
+                    seamless and engaging web experiences. With a deep interest in the latest technologies, I specialize 
+                    in creating user-centric designs that are responsive, accessible, and visually stunning.
+                </p>
+                <p class="animated-paragraph para-2">
+                    I have expertise in technologies such as <strong>HTML5, CSS3, JavaScript, React.js</strong>, and 
+                    modern UI/UX principles. My mission is to combine creativity with functionality to deliver impactful 
+                    solutions for businesses and users alike.
+                </p>
+                <p class="animated-paragraph para-3">
+                    In my spare time, I enjoy contributing to open-source projects, exploring new web development trends, 
+                    and continuously improving my skills. I'm always open to learning new things and collaborating on exciting projects!
+                </p>
+                <h3>Highlights:</h3>
+                <ul>
+                    <li class="animated-line line-1">Strong foundation in front-end development principles</li>
+                    <li class="animated-line line-2">Skilled in building responsive and mobile-first designs</li>
+                    <li class="animated-line line-3">Proficient with design tools like Figma and Adobe XD</li>
+                    <li class="animated-line line-4">Passionate about creating user-friendly and visually appealing web apps</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init(); // Initialize AOS animations
+    </script>
+</body>
+</html>

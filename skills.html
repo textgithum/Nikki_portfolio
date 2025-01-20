@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Nikki.css">
+    <title>Skills - Nikki Portfolio</title>
+    <style>
+        /* Animation for fade-in effect */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Base class for animation */
+        .animated-element {
+            opacity: 0; /* Hidden initially */
+            animation: fadeIn 1s forwards; /* Fade-in animation */
+        }
+
+        /* Apply fade-in to the image */
+        .animated-image {
+            opacity: 1; /* Initially hidden */
+            animation: fadeIn 1s forwards; /* Fade-in effect for image */
+        }
+
+        /* Add incremental delays for different sections */
+        .image {
+            animation-delay: 0s; /* No delay for the image */
+        }
+
+        .content {
+            animation-delay: 0.5s; /* Content appears after image */
+        }
+
+        .skills-list {
+            animation-delay: 1s; /* Skills list appears after content */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Nikki <span>Ram</span></div>
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="projects.html">My Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="main-container">
+            <!-- Image Section (First Displayed Together With About Content) -->
+            <div class="image animated-image" data-aos="fade-right" data-aos-duration="1500">
+                <img src="nikki5.jpg" alt="Nikki Ram" />
+            </div>
+            
+            <!-- Content Section (Displayed Together With Image) -->
+            <div class="content animated-element">
+                <h1>Skills</h1>
+                <p>
+                    As a front-end developer, I have honed a diverse set of skills that allow me to build beautiful, responsive, and interactive websites. 
+                    My expertise spans across several modern web technologies and frameworks. I am always excited to learn new skills and stay updated with industry trends.
+                    Here are some of the key skills I've acquired over time:
+                </p>
+                
+                <!-- Skills List Inside Paragraph -->
+                <ul class="skills-list animated-element">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>React.js</li>
+                    <li>Vue.js</li>
+                    <li>Node.js</li>
+                    <li>Git & GitHub</li>
+                    <li>Responsive Web Design</li>
+                    <li>Webpack & Babel</li>
+                    <li>UI/UX Design (Figma, Adobe XD)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
